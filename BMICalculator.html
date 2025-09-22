@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <script src="/script.js"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <img src="/images/bmi calculator index png.jpg" alt="">
+            <h2 style="font-size: 45px; color: brown; font-weight: bold;">BMI Calculator<br><span style="font-size: 30px;">Body Mass Index</span></h2>
+
+        </div>
+        
+        <div class="main1">
+            <div class="section">
+        <img src="/images/bmi png.png" alt="">
+        
+        <p>Healthy BMI range: 18.5 kg/m2 - 25 <br> kg/m2</p>
+    </div>
+    <div class="arrow"><img src="/images/arrow png.png" id="arrow" alt=""></div>
+    <div class="section2">
+        <h2 >GENDER</h2>
+        <input type="radio" name="gender" id="male">
+        <label for="" style="font-size: 22px; font-weight: bold;">male</label>
+        <input type="radio" name="gender" value="male" id="female">
+        <label for="" style="font-size: 22px; font-weight: bold;">female</label><br><br>
+        <h2>Age(2yrs and <br> above)</h2>
+        <input type="text" id="age" placeholder="YOUR AGE IN Yrs " style="height: 30px; border-radius: 5px; border: none;">
+
+    </div>
+    <div class="section3">
+        <h2>Weight</h2>
+        <input type="text" placeholder="Your Weight in kgs" id="weight" style="height: 35px; border-radius: 5px; border: none; width: 200px;">
+        <h2>Height</h2>
+        <input type="text" placeholder="Your Height in cms" id="height" style="height: 35px; border-radius: 5px; border: none; width: 200px;"><br><br><br>
+        <button  class="btn1" onclick="calculateBMI()">Calculate</button>
+        <button class="btn2" onclick="allclear()">Reset</button>
+    </div>
+    
+    </div>
+          <div class="section4">
+        <h1 style="font-weight: bold; text-align: center; color: red; margin-top: 50px;" id="note">YOUR BMI IS</h1>
+
+    </div>
+    <div id="result"></div>
+    
+
+    </div>
+    
+
+    
+</body>
+</html>
